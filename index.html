@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+  <meta charset="UTF-8">
+  <title>JS Exercises</title>
+</head>
+<body>
+  <h1>JS Exercises</h1>
+  <button onclick="runScript('binarysearch.js')">Binary </Search></button>
+  <script>
+    function runScript(file) {
+      let old = document.getElementById("dynamic-script");
+      if (old) old.remove();
+      let script = document.createElement("script");
+      script.src = file;
+      script.id = "dynamic-script";
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
