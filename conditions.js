@@ -15,3 +15,5 @@ if (!age || age < 0 || age > 130) {
 } else if (age >= 18) {
     console.log("You can buy beer, wine and schnaps 🍺🍷🥃.");
 }
+
+console.log("now it is working")
